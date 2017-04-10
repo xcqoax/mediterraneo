@@ -83,7 +83,7 @@ nav{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 
@@ -169,6 +169,22 @@ footer p{
 }
 
 
+
+/* -------- menu ----------- */
+
+.header_menu{
+    background: url(recursos/food-516044_1920.jpg);
+    height: 800px;
+    background-attachment: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* flex -------------------------------------*/
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
 
 /*------------------------------------------------- media queries ----------------------------------------------------*/
 @media (max-width: 1100px){
