@@ -68,6 +68,7 @@ header{
 .logo a{
     line-height: 35px;
     font-family: 'Lobster', cursive;
+    
 }
  header .menu .logo img{
    width: 70px;
@@ -207,9 +208,20 @@ footer p{
     nav{
         width: 100%;
     }
+    
+    .logo{
+        width: auto;
+    }
 }
 
-@media (max-width: 600px;)
-.logo{
-    width: 100%;
+@media (max-width: 600px){
+    nav a {
+        font-size: 20px;
+    }
+    
+    
+    .logo a{
+        font-size: 20px;
+    }
 }
+
