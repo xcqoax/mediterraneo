@@ -205,9 +205,8 @@ footer p{
     /* flex ---------------*/
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .cont_menu_img {
@@ -221,8 +220,10 @@ footer p{
 
 .cont_menu_txt{
     width: 60%;
-    background-color: aqua;
     padding: 25px;
+    
+    justify-content: center;
+    align-items: center
 }
 
 @keyframes fondo{
@@ -246,6 +247,22 @@ footer p{
     
 }
 /*------------------------------------------------- media queries ----------------------------------------------------*/
+
+@media (max-width:1920px)
+{
+    .contenido_menu{
+        flex-direction: row;
+        justify-content: center
+       
+    }
+    .cont_menu_img{
+        width: 350px;
+        
+    }
+}
+
+
+
 @media (max-width: 1100px){
     .texto h2{
         font-size: 25px;
@@ -253,6 +270,11 @@ footer p{
     
     .texto p{
         font-size: 15px;
+    }
+    
+    .contenido_menu{
+        flex-direction: row;
+        flex-wrap: nowrap;
     }
 }
 
@@ -287,6 +309,19 @@ footer p{
     .logo{
         width: auto;
     }
+    
+    .contenido_menu{
+        flex-direction: column;
+    }
+    
+    .cont_menu_img{
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .cont_menu_txt{
+        width: auto;
+    }
 }
 
 @media (max-width: 600px){
@@ -297,6 +332,19 @@ footer p{
     
     .logo a{
         font-size: 20px;
+    }
+    
+    .cont_menu_img{
+        width: auto;
+        margin: 0 auto;
+    }
+    
+    .header_menu, .header_inicio{
+        height: 155px;
+    }
+    
+    .texto p{
+        font-size: 15px;
     }
 }
 
