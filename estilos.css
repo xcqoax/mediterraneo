@@ -16,7 +16,7 @@
 
 .header_inicio{
     background: url(recursos/platter-2009590_1920.jpg);
-    height: 800px;
+    height: 600px;
     background-attachment: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -86,7 +86,7 @@ nav{
 }
 
 
-.articulos{
+.articulos, .datos_contacto{
     width: 90%;
     margin: auto;
     background: #f7f7f7;
@@ -175,7 +175,7 @@ footer p{
 
 .header_menu{
     background: url(recursos/blur-1839311_1920.jpg);
-    height: 800px;
+    height: 600px;
     background-attachment: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -218,7 +218,7 @@ footer p{
    
 }
 
-.cont_menu_txt{
+.cont_menu_txt, .datos_cont{
     width: 60%;
     padding: 25px;
     
@@ -246,6 +246,39 @@ footer p{
     background-size: cover;}
     
 }
+
+
+/* contacto ----------*/
+    .header_contacto{
+    background: url(recursos/ipad-632394_1920.jpg);
+    height: 600px;
+    background-attachment: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+    /* flex ------------------*/
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    
+}
+
+.datos_contacto{
+    padding: 10px;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.pequeno {
+    display: none;
+}
+
+
 /*------------------------------------------------- media queries ----------------------------------------------------*/
 
 @media (max-width:1920px)
@@ -322,6 +355,29 @@ footer p{
     .cont_menu_txt{
         width: auto;
     }
+    
+    .datos_contacto{
+    padding: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+    }
+    
+    .datos_cont{
+        width: 100%;
+        align-content: center;
+    }
+    .datos_cont p {
+        text-align: center;
+        padding: 0 auto;
+    }
+    .mapa_ubi{
+        width: auto;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 600px){
@@ -345,6 +401,15 @@ footer p{
     
     .texto p{
         font-size: 15px;
+    }
+    
+    .mediano {
+        display:none;
+    }
+    
+    .pequeno {
+        display: inline-block;
+        width: auto;
     }
 }
 
