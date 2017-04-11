@@ -14,8 +14,7 @@
     flex-wrap: wrap;
 }
 
-header{
-    
+.header_inicio{
     background: url(recursos/platter-2009590_1920.jpg);
     height: 800px;
     background-attachment: contain;
@@ -170,22 +169,82 @@ footer p{
 
 
 
-/* -------- menu ----------- */
+/* ----------------------- menu ----------- */
+
+
 
 .header_menu{
-    background: url(recursos/food-516044_1920.jpg);
+    background: url(recursos/blur-1839311_1920.jpg);
     height: 800px;
     background-attachment: contain;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    animation: 16s fondo infinite;
+    animation-play-state: running;
     
-    /* flex -------------------------------------*/
+    /* flex ------------------*/
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
 }
 
+.menu_menu{
+    width: 90%;
+    margin: auto;
+    background: #f7f7f7;
+    /*   flex      -------------------------*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.contenido_menu{
+    width: 100%;
+    padding: 15px;
+    /* flex ---------------*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+    justify-content: space-around;
+}
+
+.cont_menu_img {
+    width: 40%;
+}
+
+.cont_menu_img img {
+    width: 100%;
+   
+}
+
+.cont_menu_txt{
+    width: 60%;
+    background-color: aqua;
+    padding: 25px;
+}
+
+@keyframes fondo{
+    0% { }
+    25% { background: url(recursos/chicken-583761_1920.jpg);
+    background-attachment: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    50% {background: url(recursos/sandwich-498379_1920.jpg);
+    background-attachment: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+    75%  {background: url(recursos/food-516044_1920.jpg);
+    background-attachment: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+    
+}
 /*------------------------------------------------- media queries ----------------------------------------------------*/
 @media (max-width: 1100px){
     .texto h2{
